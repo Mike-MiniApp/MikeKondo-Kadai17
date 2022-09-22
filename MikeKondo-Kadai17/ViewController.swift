@@ -72,6 +72,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         self.selectedIndex = indexPath.row
         performSegue(withIdentifier: "EditFruit", sender: nil)
     }
+
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             fruits.remove(at: indexPath.row)
